@@ -1,0 +1,96 @@
+<doctype! html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <h1>HTML5 form attributes</h1>
+    <ul>
+        <li>  <h2> Checkbox</h2> <form>
+          
+            <input type="checkbox">
+            <h2> Radio</h2> 
+            <input type="radio">
+            </form>
+        </li>
+                <li>
+                     <h2>Placeholder + Different types of inputs</h2>
+        <form>
+               
+        
+First name:</br>
+      <input type="text" name="firstname" placeholder="Enter your's name">
+</br>
+Last name:</br>
+<input type="text" name="lastname" placeholder="Enter your's surmane">
+</br>
+User password:</br>
+<input type="password" name="psw" placeholder="Write password">
+            </form></li>
+</br><input type="submit" value="Submit">
+</br><p>Choose a color,please:</p>
+<input type="color">
+</br>
+</br>
+<input type="button" onclick="alert('Input type - Button')" value="Click Me!">
+</br>
+</br>
+Quantity (between 1 and 25):
+  <input type="number" name="quantity" min="1" max="25">
+  </br>
+  </br>
+  Choose the date:
+  <input type="date" name="tday">
+  <input type="submit">
+  </br>
+  </li>
+  <li>
+        <h2>Autofocus</h2>
+<form action="demo_form.asp">
+      
+     First name:</br>
+      <input type="text" name="firstname" placeholder="Enter your's name" autofocus>
+</br>
+Last name:</br>
+<input type="text" name="lastname" placeholder="Enter your's surmane">
+</br>
+</br>
+<input type="submit">
+   </form>
+   </li>
+   <li> <h2>Required</h2>
+        <form action="demo_form.asp">
+                       First name:</br>
+      <input type="text" name="firstname" placeholder="Enter your's name" required>
+</br>
+Last name:</br>
+<input type="text" name="lastname" placeholder="Enter your's surmane" required>
+</br>
+</br>
+<input type="submit">
+      </form>
+   </li>
+   <li><h2>Pattern</h2>
+   <form action="demo_form.asp"><!--The action attribute specifies where to send the form-data when a form is submitted.-->
+ New Twitter User: <input type="text" name="Twitter_Username" pattern="[A-Za-z0-9_]{1,15}" title="New Twitter usernames have a character maximum of 15">
+  <input type="submit">
+  </br>
+  </br>
+   Enter your's phone number: <input type="number" name="Phone_number" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" title="Format: +99(99)9999-9999)">
+  <input type="submit">
+</form>
+   </li>
+   <li><h2>List and the datalist element</h2>
+      <label>Your favorite fruit:
+<datalist id="fruits">
+  <option value="Blackberry">Blackberry</option>
+  <option value="Blackcurrant">Blackcurrant</option>
+  <option value="Blueberry">Blueberry</option>
+  </datalist>
+If other, please specify:
+  <input type="text" name="fruit" list="fruits">
+</label>
+       
+   </li>
+    </body>
+    
+    </html>
